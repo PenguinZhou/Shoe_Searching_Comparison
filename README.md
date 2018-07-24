@@ -6,7 +6,11 @@ Up to now, I only use the shoes in zappos-labels-fg.mat, because it contains com
 
 Input: a dict of the 'key: value', i.e. {key1: value1, key2: value2, ...}
 
+![Input Example](../InteractiveMode.png)
+
 Output: An image showing two kind of shoes, one will match the conditions we speicify in the input (randomly from the mathcing result), and the other one is the pair of the matching one. The image will also show the attributes of the shoes and the comparison result. 
+
+![Output Example](../Recommend_to_you!.png)
 
 ## The successful testing environment
 
