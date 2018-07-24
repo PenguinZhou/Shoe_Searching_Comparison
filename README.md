@@ -30,3 +30,6 @@ Remember to start MongoDB service in a separate window.
 ### Matlab2017b (Optional)
 
 To store the dataset in the MongoDB, I need to process the **.mat**. Most of the **.mat** file in the dataset can be directly processed using **spicy.io** except the **rationale-fg.mat**. This file is a little like h5df. So I process it in Matlab and convert the information to **ration.txt** before processing in python. 
+
+## Notes
+I change the folder name of 'ut-zap50k-images-square\Shoes\Oxfords\Neil M%2E' to 'ut-zap50k-images-square\Shoes\Oxfords\Neil M.' for some reasons.
