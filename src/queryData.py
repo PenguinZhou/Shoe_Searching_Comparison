@@ -134,6 +134,8 @@ class ShoeDB:
         img1 = mpimg.imread(image_1_path)
         img2 = mpimg.imread(image_2_path)
 
+        plt.clf()
+
         plt.figure('Recommend to you!', figsize=(9,6))
         plt.suptitle(comparison)
         plt.subplot(1,2,1)
@@ -147,7 +149,9 @@ class ShoeDB:
         plt.imshow(img2)
         plt.axis('off')
         plt.text(0.0, -0.3, description_2, size = 11, ha="left", transform=plt.subplot(1,2,2).transAxes)
-        plt.show()
+
+        plt.ion()
+        plt.show(block=False)
 
     def queryShow(self, query_dict):
         query_result = self.query(query_dict, number = 1, print_console = False)
@@ -194,13 +198,15 @@ if __name__ == '__main__':
         print('{}-round query: key = {}, value = {}'.format(query_count, query_key, query_value))
         query_count += 1
 
-        try:
-            pid = os.fork()
-        except OSError:
-            exit("Could not create a child process")
-        if pid == 0: # Show the image
-            shoedb.queryShow(query_dict)   ### The query_dict format should be {'key1': 'value1', 'key2': 'value2', ...}
-            exit()
+        shoedb.queryShow(query_dict)   ### The query_dict format should be {'key1': 'value1', 'key2': 'value2', ...}
 
-    os.kill(pid, 9)
+    #     try:
+    #         pid = os.fork()
+    #     except OSError:
+    #         exit("Could not create a child process")
+    #     if pid == 0: # Show the image
+    #         shoedb.queryShow(query_dict)   ### The query_dict format should be {'key1': 'value1', 'key2': 'value2', ...}
+    #         exit()
+
+    # os.kill(pid, 9)
 
