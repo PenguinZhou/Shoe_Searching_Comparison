@@ -67,7 +67,7 @@ def creatDB():
     for image in image_all:
         image_json = {
             'index': index,
-            'path': str(image[0]).replace('[u\'','').replace('\']','').replace('\"','')
+            'path': image[0][0]   #str(image[0][0]).replace('[u\'','').replace('\']','').replace('\"','')
         }
         path.insert(image_json)
         index += 1

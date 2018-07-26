@@ -4,6 +4,8 @@ An code example to search the shoe and plot two kind of shoes in the dataset [UT
 
 Up to now, I only use the shoes in zappos-labels-fg.mat, because it contains comparative information about the similar pairs and reasons (Mturk).
 
+Need to download the "image-square.zip" in above dataset link.
+
 Input: a dict of the 'key: value', i.e. {key1: value1, key2: value2, ...}
 
 * Query mode
