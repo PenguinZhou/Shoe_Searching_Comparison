@@ -9,10 +9,12 @@ Need to download the "image-square.zip" in above dataset link.
 Input: a dict of the 'key: value', i.e. {key1: value1, key2: value2, ...}
 
 * Query mode
+
 ![Input Example_1](https://github.com/PenguinZhou/Shoe_Searching_Comparison/raw/master/InteractiveMode.png)
 
 * Recommendation based on your previous choice
-![Recommend Example](https://github.com/PenguinZhou/Shoe_Searching_Comparison/raw/master/Learn_preference_example.png)
+
+![Recommend Example](https://github.com/PenguinZhou/Shoe_Searching_Comparison/raw/master/Learn_reference_example.png)
 
 Output: An image showing two kind of shoes, one will match the conditions we speicify in the input (randomly from the mathcing result), and the other one is the pair of the matching one. The image will also show the attributes of the shoes and the comparison result. 
 
